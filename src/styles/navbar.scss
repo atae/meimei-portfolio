@@ -2,14 +2,18 @@ nav {
   display: flex;
   justify-content:space-between;
   max-width: 1280px;
-  width: 100%;
+  width: calc(100vw - 32px);
   margin: 0 auto;
   margin-top: 42px;
+  padding: 0 16px;
+  
   .links {
     margin-top: auto;
-    margin-bottom: 6px;
     a {
-      padding-right: 36px;
+      padding-right: 16px;
+      @media screen and (min-width:576px) {
+        padding-right: 36px;
+      }
       &:last-of-type {
         padding-right: 0;
       }
