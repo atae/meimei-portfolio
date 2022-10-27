@@ -1,0 +1,63 @@
+h1, h2, a {
+  all: unset;
+}
+
+
+body, html, main {
+  font-family: 'Botanika';
+  height: 98vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  display: block;
+  font-family: 'Botanika';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h2 {
+  font-family: 'Botanika Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+a {
+  cursor: pointer;
+  font-family: 'Botanika Mono';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+
+  &:hover {
+    // font-weight: 600;
+    text-shadow:
+    -0.25px -0.25px 0 black,
+    0.25px -0.25px 0 black,
+    -0.25px 0.25px 0 black,
+    0.25px 0.25px 0 black;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+
+    &.active {
+      text-shadow: 0;
+    }
+  }
+
+}

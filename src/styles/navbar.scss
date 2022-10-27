@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  justify-content:space-between;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 42px;
+  .links {
+    margin-top: auto;
+    margin-bottom: 6px;
+    a {
+      padding-right: 36px;
+      &:last-of-type {
+        padding-right: 0;
+      }
+      
+      &.active {
+        font-weight: 600;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@use './shared.scss';
+
+.index-container {
+  width: 100%;
+  margin: 0 auto;
+
+  @media screen and (min-width: 576px) {
+    width:80%;
+    max-width: 1440px;
+    min-height: 564px;
+  }
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+
+  @media screen and (min-width: 576px) {
+    width: 100%;
+    min-height: 564px;
+  }
+  iframe {
+    width: 100%;
+  }
+}

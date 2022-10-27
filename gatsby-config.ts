@@ -13,7 +13,7 @@ const config: GatsbyConfig = {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
-    }
+    },
   }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
@@ -21,7 +21,13 @@ const config: GatsbyConfig = {
       "path": "./src/images/"
     },
     __key: "images"
-  }]
+    },
+    {
+      resolve: 'gatsby-plugin-page-transitions',
+      options: {
+        transitionTime: 500
+      }
+    }]
 };
 
 export default config;
